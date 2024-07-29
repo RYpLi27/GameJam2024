@@ -31,7 +31,7 @@ public class CameraPlayer : MonoBehaviour
 
         _cameraPitch += mouseY * ySensitivity;
 
-        _cameraPitch = Mathf.Clamp(_cameraPitch, -60.0f, 6.0f);
+        _cameraPitch = Mathf.Clamp(_cameraPitch, -30.0f, 15.0f);
  //       if (_cameraPitch > 6.0f)        
   //          _cameraPitch = 6.0f;        
   //      if (_cameraPitch < -60.0f)        
