@@ -19,6 +19,16 @@ public class SpriteDirectionalController : MonoBehaviour
 
         float angle = Mathf.Abs(signedAngle);
 
+        //this is side of animation for sprite
+        //if (signedAngle < 0.0f)
+        //{
+        //    spriteRenderer.flipX = true;
+        //}
+        //else
+        //{
+        //    spriteRenderer.flipX = false;
+        //}
+
         if (angle < backAngle)
         {
                 //back animation
@@ -28,6 +38,15 @@ public class SpriteDirectionalController : MonoBehaviour
         {
                 //side animation (right)
                 animationDirection = new Vector2(1.0f, 0.0f);
+            //this is side of animation for sprite
+            if (signedAngle < 0.0f)
+            {
+                spriteRenderer.flipX = true;
+            }
+            else
+            {
+                spriteRenderer.flipX = false;
+            }
         } 
         else 
             {
@@ -35,7 +54,7 @@ public class SpriteDirectionalController : MonoBehaviour
                 animationDirection = new Vector2(0.0f, 1.0f);
             }
 
-        animator.SetFloat("moveX", animationDirection.x);
-        animator.SetFloat("moveY", animationDirection.y );
+        animator.SetFloat("FX", animationDirection.x);
+        animator.SetFloat("FY", animationDirection.y);
     }
 }
