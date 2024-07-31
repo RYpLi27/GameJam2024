@@ -19,7 +19,7 @@ public class CameraPlayer : MonoBehaviour
        _cameraTransform = camera.GetComponent<Transform>();
 
         //Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
     }
     void Update()
     {

@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28406f50c6baae34ea14f89a470e7a67, type: 3}
+  m_Name: SFX - BushStep
+  m_EditorClassIdentifier: 
+  trackAudioClip: {fileID: 8300000, guid: 33b449e4c561e634387914f33d418f03, type: 3}
